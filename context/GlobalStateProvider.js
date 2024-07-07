@@ -7,7 +7,7 @@ export const useGlobalState = () => useContext(GlobalStateContext);
 
 const clampValue = (value) => Math.min(100, Math.max(0, value));
 
-const DECREASE_RATE = 100 / (48 * 60 * 60 * 1000); // 100 points over 48 hours in milliseconds
+const DECREASE_RATE = 100 / (72 * 60 * 60 * 1000); // 100 points over 72 hours in milliseconds
 
 export const GlobalStateProvider = ({ children }) => {
   const [user, setUser] = useState(null);
