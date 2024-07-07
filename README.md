@@ -11,7 +11,7 @@ I tried to narrow down Mood-Changers to 6 Stats:
 - Hygiene
 - Sozial
 
-The Stats automatically decrease and go down to 0 in a Time of 48 Hours since the last Habit was tracked.
+The Stats value range from 0 to 100 automatically decrease over time since the last Habit was tracked. A Stat goes from 100 to 0 in 48 Hours.
 
 ### Habits
 Since everyone has different Goals to focus on, there is no fixed set of Habits. 
