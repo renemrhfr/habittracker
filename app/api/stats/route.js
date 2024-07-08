@@ -1,4 +1,3 @@
-// app/api/stats/route.js
 import { NextResponse } from 'next/server';
 import { prisma } from '../../../lib/db'
 
