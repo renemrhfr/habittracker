@@ -12,7 +12,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
       <div className="overflow-hidden">
         <Dashboard />
       </div>

@@ -4,6 +4,10 @@ import './globals.css';
 export const metadata = {
   title: 'Habit Tracker',
   description: 'Track your habits and improve your life',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png',
+  }
 };
 
 export default function RootLayout({ children }) {
