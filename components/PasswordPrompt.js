@@ -1,15 +1,14 @@
-import { useState } from 'react';
+"use client"
+import { useState } from "react";
 
-function PasswordPrompt({ onCorrectPassword }) {
+function PasswordPrompt({ onSubmit }) {
+
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(false);
+  const [error, setError] = useState('');
 
   const checkPassword = () => {
-    if (password === process.env.NEXT_PUBLIC_APP_PASSWORD) {
-      onCorrectPassword();
-    } else {
-      setError(true);
-    }
+   var errorMessage = onSubmit(password);
+   setError(errorMessage);
   };
 
   return (
