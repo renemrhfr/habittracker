@@ -1,7 +1,20 @@
 "use client"
-import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+import PasswordPrompt from '../components/PasswordPrompt';
+import Dashboard from '../components/Dashboard';
 
 export default function Home() {
-    const router = useRouter();
-    router.push('/dashboard');
+  const [isAuthenticated, setAuthenticated] = useState(false);
+
+  if (!isAuthenticated) {
+    return <PasswordPrompt onCorrectPassword={() => setAuthenticated(true)} />;
+  }
+
+  return (
+    <main className="min-h-screen">
+      <div className="overflow-hidden">
+        <Dashboard />
+      </div>
+    </main>
+  );
 }
