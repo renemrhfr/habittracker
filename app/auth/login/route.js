@@ -6,7 +6,7 @@ const JWT_KEY = process.env.JWT_KEY;
 export async function POST(request) {
   const { password } = await request.json();
   if (password === process.env.NEXT_PUBLIC_APP_PASSWORD) {
-    const token = jwt.sign({ authorized: true }, JWT_KEY, { expiresIn: '1d' });
+    const token = jwt.sign({ authorized: true }, JWT_KEY, { expiresIn: '3d' });
     const response = NextResponse.json(
       { success: true },
       { status: 200 }
@@ -15,7 +15,7 @@ export async function POST(request) {
       httpOnly: true,
       secure: process.env.NODE_ENV !== 'development',
       sameSite: 'strict',
-      maxAge: 86400,
+      maxAge: 259200,
       path: '/'
     });
     return response;
