@@ -18,3 +18,9 @@ Since everyone has different Goals to focus on, there is no fixed set of Habits.
 With the "Hinzufügen" Button you can add your personal Habits, give them a Name and set up which Stat is should change.
 
 A Habit can have a positive or a negative effect.
+
+### Setup
+You need to install prisma-db to run this.
+
+<img width="682" alt="image" src="https://github.com/user-attachments/assets/ba848208-b462-4ee4-aef3-0ebf84950a7d" />
+
