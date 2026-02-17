@@ -1,3 +1,7 @@
+# ARCHIVED
+This Project was just for learning purposes and is no longer actively maintained.
+Do not use the code as-is without updating the Dependencies (Especially NEXTJS) first. This code version is known to have vulnerabilities.
+
 ## Habit Tracker
 Webapp to track your personal Habits that affect your mood.
 
